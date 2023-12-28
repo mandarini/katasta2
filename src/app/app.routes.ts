@@ -5,7 +5,7 @@ import { AccommodationComponent } from './contents/accommodation/accommodation.c
 
 export const routes: Route[] = [
   {
-    path: 'home',
+    path: '',
     component: AccommodationComponent,
   },
   {

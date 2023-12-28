@@ -94,6 +94,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "katasta2:build:production",
+              "serveTarget": "katasta2:serve:production"
+            },
+            "development": {
+              "buildTarget": "katasta2:build:development",
+              "serveTarget": "katasta2:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

@@ -1,0 +1,15 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "3704679554685941763": "Welcome to Katastasis!",
+    "5618920348805089987": "Please log in!",
+    "6132061082304185908": "Password:",
+    "3686036081866774336": "Enter",
+    "5866254605255506989": "English",
+    "4858902117001058852": "Ελληνικά",
+    "5465180690283688996": "This is our wedding website.",
+    "7784454877059673835": "September 7, 2024",
+    "689203476786339628": "Location: {$START_LINK}Ano Koufonisi{$CLOSE_LINK}",
+    "441982302891444066": "More info soon!"
+  }
+}

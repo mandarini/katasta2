@@ -1,24 +1,12 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
   "hosting": [
     {
       "source": ".",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "frameworksBackend": {
         "region": "europe-west1"
-      }
-    },
-    {
-      "target": "katasta2",
-      "source": ".",
-      "frameworksBackend": {}
+      },
+      "target": "katasta2"
     }
   ]
 }

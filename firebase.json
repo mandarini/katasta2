@@ -1,24 +1,25 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
   "hosting": [
     {
-      "source": ".",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
+      "public": "dist/katasta2/browser",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "i18n": {
+        "root": "/"
+      },
+      "rewrites": [
+        {
+          "source": "/en{,/**}",
+          "destination": "/en/index.html"
+        },
+        {
+          "source": "/el{,/**}",
+          "destination": "/el/index.html"
+        }
       ],
       "frameworksBackend": {
         "region": "europe-west1"
-      }
-    },
-    {
-      "target": "katasta2",
-      "source": ".",
-      "frameworksBackend": {}
+      },
+      "target": "katasta2"
     }
   ]
 }

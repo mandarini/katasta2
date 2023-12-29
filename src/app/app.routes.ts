@@ -1,21 +1,22 @@
 import { Route } from '@angular/router';
 import { guestGuard } from './guest.guard';
 import { MainComponent } from './contents/main/main.component';
-import { AccommodationComponent } from './contents/accommodation/accommodation.component';
+import { TwoComponent } from './contents/two/two.component';
+import { OneComponent } from './contents/one/one.component';
 
 export const routes: Route[] = [
   {
-    path: '',
-    component: AccommodationComponent,
+    path: 'one',
+    component: OneComponent,
   },
   {
-    path: 'wedding',
+    path: 'main',
     component: MainComponent,
     canActivate: [guestGuard],
     children: [
       {
-        path: 'accommodation',
-        component: AccommodationComponent,
+        path: 'two',
+        component: TwoComponent,
       },
     ],
   },
